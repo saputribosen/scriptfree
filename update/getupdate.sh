@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/Opindoo
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/lizsvr/cfnfree/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/saputribosen/scriptfree/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -24,19 +24,19 @@ echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
 exit 0
 fi
 clear
-lizupdate="raw.githubusercontent.com/lizsvr/cfnfree/main/update"
+airaupdate="raw.githubusercontent.com/saputribosen/scriptfree/main/update"
 # change direct
 cd /usr/bin
 # remove file
 rm menu
 rm -rf menu
 # Download update
-wget -O menu "https://${lizupdate}/menu.sh"
-wget -O maddssh "https://${lizupdate}/maddssh.sh"
-wget -O mbackup "https://${lizupdate}/mbackup.sh"
-wget -O maddxray "https://${lizupdate}/maddxray.sh"
-wget -O msetting "https://${lizupdate}/msetting.sh"
-wget -O start-menu "https://${lizupdate}/start-menu.sh"
+wget -O menu "https://${airaupdate}/menu.sh"
+wget -O maddssh "https://${airaupdate}/maddssh.sh"
+wget -O mbackup "https://${airaupdate}/mbackup.sh"
+wget -O maddxray "https://${airaupdate}/maddxray.sh"
+wget -O msetting "https://${airaupdate}/msetting.sh"
+wget -O start-menu "https://${airaupdate}/start-menu.sh"
 # change Permission
 chmod +x menu
 chmod +x maddssh
