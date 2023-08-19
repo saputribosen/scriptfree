@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/Opindoo
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,22 +14,22 @@ LIGHT='\033[0;37m'
 #Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/lizsvr/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/saputribosen/scriptfree/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
+echo -e "${NC}${LIGHT}Please Contact Telegram Admin!!"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/Opindoo"
 exit 0
 fi
 clear
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/lizsvr/cfnfree/main/backup"
+airabackup="raw.githubusercontent.com/saputribosen/scriptfree/main/backup/"
 
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://${akbarvpn}/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://${airabackup}/rclone.conf"
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
 make install
@@ -57,16 +57,16 @@ chown -R www-data:www-data /etc/msmtprc
 
 cd /usr/bin
 
-#wget -O autobackup "https://${akbarvpn}/autobackup.sh"
-wget -O addemail "https://${akbarvpn}/addemail.sh"
-wget -O changesend "https://${akbarvpn}/changesend.sh"
-wget -O startbackup "https://${akbarvpn}/startbackup.sh"
-wget -O stopbackup "https://${akbarvpn}/stopbackup.sh"
-wget -O testsend "https://${akbarvpn}/testsend.sh"
-wget -O backup "https://${akbarvpn}/backup.sh"
-wget -O restore "https://${akbarvpn}/restore.sh"
-wget -O strt "https://${akbarvpn}/strt.sh"
-wget -O limitspeed "https://${akbarvpn}/limitspeed.sh"
+#wget -O autobackup "https://${airabackup}/autobackup.sh"
+wget -O addemail "https://${airabackup}/addemail.sh"
+wget -O changesend "https://${airabackup}/changesend.sh"
+wget -O startbackup "https://${airabackup}/startbackup.sh"
+wget -O stopbackup "https://${airabackup}/stopbackup.sh"
+wget -O testsend "https://${airabackup}/testsend.sh"
+wget -O backup "https://${airabackup}/backup.sh"
+wget -O restore "https://${airabackup}/restore.sh"
+wget -O strt "https://${airabackup}/strt.sh"
+wget -O limitspeed "https://${airabackup}/limitspeed.sh"
 chmod +x addemail
 chmod +x changesend
 chmod +x startbackup
