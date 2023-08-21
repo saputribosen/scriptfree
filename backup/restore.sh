@@ -45,8 +45,8 @@ cp gshadow /etc/
 # cp -r akbarstorevpn /var/lib/
 # cp -r sstp /home/
 cp -r xray /etc/
-# cp -r trojan-go /etc/
-# cp -r shadowsocksr /usr/local/
+cp -r trojan-go /etc/
+cp -r shadowsocksr /usr/local/
 cp -r public_html /home/vps/
 cp crontab /etc/
 strt
