@@ -31,7 +31,6 @@ curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "https://${airabackup}/rclone.conf"
 git clone  https://github.com/magnific0/wondershaper.git
-mkdir wondershaper
 cd wondershaper
 make install
 cd
